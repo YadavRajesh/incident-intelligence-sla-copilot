@@ -1,0 +1,17 @@
+So in simple terms:
+
+LangChain helps you build LLM applications.
+LangGraph helps you orchestrate complex stateful multi-agent workflows around those LLM applications.
+
+LangGraph introduces workflow orchestration concepts like:
+Node Sequence
+Node sequence refers to the ordered flow in which nodes/agents execute inside the workflow. It defines the logical processing pipeline of the system. In your Version 2 architecture, the sequence would typically be: Incident Analysis Node → RAG Retrieval Agent → Similarity Reasoning Agent → SLA Analysis Node → Governance & Evaluation Node → Alert Generation Node. This sequence ensures that each node receives the enriched state from the previous node and performs its own specialized responsibility before passing the state forward.
+
+Graph Edges
+Graph edges are the connections between nodes that define how execution moves through the workflow graph. They represent the possible execution paths between nodes. For example, an edge from rag_retrieval_agent to similarity_reasoning_agent means that once retrieval completes, the workflow should move to semantic reasoning. In LangGraph, edges essentially control the orchestration logic and define how state flows between different parts of the workflow.
+
+Conditional Routing
+Conditional routing means the workflow dynamically decides which node to execute next based on the current workflow state or execution results. Instead of always following a fixed path, the graph can branch conditionally. For example, if retrieval confidence is extremely low or no candidates are found, the workflow could skip the Similarity Reasoning Agent and directly route to the Governance Node for low-confidence handling. This makes the workflow more intelligent, efficient, and production-ready.
+
+Workflow Transitions
+Workflow transitions refer to the movement of the shared state from one node to another during execution. Each transition represents a state handoff where the output of one node becomes the input for the next node. For example, after the RAG Retrieval Agent enriches the state with retrieved candidates, the workflow transitions that updated state into the Similarity Reasoning Agent. Workflow transitions are essentially the runtime progression of the orchestration graph.

@@ -1,0 +1,51 @@
+﻿incident_number;short_description;description;assignment_group;business_service;cmdb_ci
+INC100001;Database timeout;Production database timeout causing payment failures;Database Support;Payments;PROD-DB-01
+INC100002;Database latency;High latency observed in reporting database cluster;Database Support;Reporting;PROD-DB-02
+INC100003;API authentication failure;OAuth token validation failing for API users;API Support;Authentication;AUTH-SERVER-01
+INC100004;VPN access issue;Users unable to connect through VPN gateway;Network Support;Remote Access;VPN-GW-01
+INC100005;Password expired;User login failures due to expired passwords;Identity Support;Identity Management;AD-SERVER-01
+INC100006;Order creation failure;Customer orders failing during checkout;Application Support;E-Commerce;ORDER-APP-01
+INC100007;Application crash;Order management application crashing intermittently;Application Support;Order Management;OMS-APP-01
+INC100008;High CPU utilization;Application server CPU usage above threshold;Infrastructure Support;Compute;APP-SERVER-11
+INC100009;Email delivery delay;Corporate emails delayed significantly;Messaging Support;Messaging;EXCHANGE-01
+INC100010;DNS resolution issue;Internal applications unable to resolve DNS names;Network Support;DNS;DNS-SERVER-01
+INC100011;Disk space full;Application logs filled disk storage completely;Infrastructure Support;Storage;LINUX-SERVER-21
+INC100012;Memory leak detected;Java application consuming excessive memory;Application Support;Claims Processing;JAVA-APP-01
+INC100013;Network packet loss;Packet drops observed in WAN network link;Network Support;Connectivity;WAN-ROUTER-01
+INC100014;SAP login failure;Users unable to login into SAP production system;SAP Support;ERP;SAP-PRD-01
+INC100015;SSL certificate expired;External API failing due to expired certificate;Security Support;API Gateway;API-GW-01
+INC100016;Slow report generation;Financial reports taking too long to generate;BI Support;Reporting;REPORT-SERVER-01
+INC100017;File transfer failure;SFTP job failing for partner file transfer;Middleware Support;File Transfer;SFTP-SERVER-01
+INC100018;Printer connectivity issue;Office printers unreachable from network;Desktop Support;Printing;PRINTER-01
+INC100019;Database replication lag;Replica database lagging behind primary database;Database Support;Payments;DB-REPLICA-01
+INC100020;Web portal unavailable;Customer portal returning service unavailable errors;Web Support;Customer Portal;WEB-APP-01
+INC100021;Container restart loop;Kubernetes pod restarting continuously;Cloud Operations;Container Platform;K8S-CLUSTER-01
+INC100022;Firewall block detected;Traffic blocked unexpectedly by firewall rules;Network Security;Security;FIREWALL-01
+INC100023;Database connection pool exhausted;Application unable to acquire database connections;Application Support;Payments;PAYMENT-APP-01
+INC100024;Microservice timeout;Downstream microservice timing out frequently;Application Support;Microservices;MS-SERVICE-01
+INC100025;Load balancer health check failure;Backend nodes marked unhealthy by load balancer;Infrastructure Support;Load Balancing;LB-01
+INC100026;Payroll processing delay;Payroll batch processing delayed overnight;HR Systems Support;Payroll;PAYROLL-APP-01
+INC100027;User account locked;Multiple user accounts locked after failed login attempts;Identity Support;Identity Management;AD-SERVER-02
+INC100028;POS transaction failure;Store POS systems failing payment transactions;Retail Support;Retail Payments;POS-SERVER-01
+INC100029;Cache synchronization issue;Distributed cache nodes out of sync;Application Support;Caching;CACHE-CLUSTER-01
+INC100030;Backup job failed;Nightly backup process failed unexpectedly;Infrastructure Support;Backup;BACKUP-SERVER-01
+INC100031;Search functionality failure;Customer search feature returning empty results;Web Support;Customer Portal;SEARCH-ENGINE-01
+INC100032;Database deadlock;Concurrent transactions causing deadlocks;Database Support;Payments;PROD-DB-03
+INC100033;Mobile app crash;Mobile banking application crashing on launch;Mobile Support;Mobile Banking;MOBILE-APP-01
+INC100034;Router CPU spike;Core router CPU usage critically high;Network Support;Connectivity;CORE-ROUTER-01
+INC100035;Queue processing stuck;Message queue consumers not processing events;Middleware Support;Event Processing;RABBITMQ-01
+INC100036;Fraud detection API unavailable;Fraud API returning server errors;Application Support;Fraud Detection;FRAUD-API-01
+INC100037;Kubernetes node unavailable;Worker node unavailable in Kubernetes cluster;Cloud Operations;Container Platform;K8S-NODE-07
+INC100038;CRM integration failure;CRM synchronization jobs failing intermittently;Application Support;CRM;CRM-INTEGRATION-01
+INC100039;Session timeout issue;Users being logged out unexpectedly from portal;Web Support;Customer Portal;WEB-SESSION-01
+INC100040;Payment gateway unreachable;External payment gateway inaccessible;Payments Support;Payments;PAYMENT-GW-01
+INC100041;Disk IO bottleneck;High disk IO causing slow server response;Infrastructure Support;Storage;LINUX-SERVER-31
+INC100042;Citrix login issue;Users unable to launch Citrix sessions;Desktop Support;Virtual Desktop;CITRIX-01
+INC100043;License server unavailable;Application unable to validate software licenses;Application Support;Licensing;LICENSE-SERVER-01
+INC100044;Order status mismatch;Incorrect order status displayed to customers;Application Support;Order Management;OMS-APP-03
+INC100045;Database failover issue;Automatic failover not triggering during outage;Database Support;Payments;DB-CLUSTER-01
+INC100046;Single sign on issue;Single sign on failing for enterprise users;Identity Support;Authentication;SSO-SERVER-01
+INC100047;Network latency spike;Latency increased between primary data centers;Network Support;Connectivity;DC-LINK-01
+INC100048;API gateway memory issue;API gateway consuming excessive memory;API Support;API Gateway;API-GW-03
+INC100049;Invoice generation error;Invoices not generated for completed orders;Finance Support;Billing;INVOICE-APP-01
+INC100050;Storage mount failure;NFS storage mount unavailable on Linux servers;Infrastructure Support;Storage;NFS-SERVER-01
