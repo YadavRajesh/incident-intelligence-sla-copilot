@@ -52,7 +52,7 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t ${{ secrets.ACR_NAME }}.azurecr.io/incident-intelligence-api:latest .
+          docker build -t ${{ secrets.ACR_NAME }}.azurecr.io/incident-intelligence-api:${{ github.sha }} .
 
       - name: Azure Container Registry Login
         run: |
@@ -60,14 +60,14 @@ jobs:
 
       - name: Push Docker Image
         run: |
-          docker push ${{ secrets.ACR_NAME }}.azurecr.io/incident-intelligence-api:latest
+          docker push ${{ secrets.ACR_NAME }}.azurecr.io/incident-intelligence-api:${{ github.sha }}
 
       - name: Deploy to Azure Container App
         run: |
           az containerapp update \
             --name ${{ secrets.CONTAINER_APP_NAME }} \
             --resource-group ${{ secrets.RESOURCE_GROUP }} \
-            --image ${{ secrets.ACR_NAME }}.azurecr.io/incident-intelligence-api:latest
+            --image ${{ secrets.ACR_NAME }}.azurecr.io/incident-intelligence-api:${{ github.sha }}
 
 
 
